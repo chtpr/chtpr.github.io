@@ -102,19 +102,18 @@ img{
     }
   
     .myname{
-        /* display: none; */
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
 
     .navbar ul{
-        /* display: inline; */
-        
+        display: block;
     }
 
 
     .navbar ul li{
-        margin: 5px;
         padding: 5px;
-
+        margin: 5px;
     }
 
     /* .initials{
