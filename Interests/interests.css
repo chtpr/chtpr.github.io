@@ -1,0 +1,23 @@
+.interests-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+
+.interests-container a{
+    width: 30%;
+}
+
+img{
+    width: 100%;
+    z-index: 2;
+}
+
+img:hover{
+    transition: 100ms;
+    transform: scale(1.02);
+}

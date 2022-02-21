@@ -1,0 +1,170 @@
+/* Top Level */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DFCFBE;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    padding-bottom: 10px;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    max-width: 100%;
+    background-color: white;
+    text-align: center;
+    justify-content: space-around;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+/* Menu Options */
+.navbar ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    margin: 15px;
+    padding: 15px;
+    opacity: 0.3;
+    transition: 0ms;
+}
+
+/* Website title */
+.logo{
+    margin: 11px;
+    padding: 11px;
+    font-family: 'Roboto Slab', serif;
+    white-space: nowrap;
+}
+
+/* Links */
+a{
+    text-decoration: none;
+    color: black;
+    border-radius: 2px;
+}
+
+#active, .navbar ul li:hover{
+    opacity: 1.0;
+}
+
+a:active{
+    color: red;
+}
+
+/* Home grid */
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(2, [col] 50%);
+    grid-template-rows: repeat(3, [row] 45%);
+    width: 95%;
+}
+
+/* About Me Box */
+.aboutme-box{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 30px;
+}
+
+.aboutme-box p{
+    width: 90%;
+    padding: 20px;
+}
+
+/* Experience box */
+.experience-box{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.experience-box ul{
+    padding: 10px;
+    list-style: none;
+}
+
+.experience-box ul li{
+    padding: 10px;
+}
+
+/* Picture box */
+.picture-box{
+    grid-column: 2;
+    grid-row: 2 / span 3;
+}
+
+#profilepic{
+    width: 100%;
+}
+
+/* General content for other pages */
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    column-gap: 10px;
+}
+
+/* Displaying on mobile */
+@media only screen and (max-width: 700px) {
+    
+    /* Navigation bar */
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul li{
+        padding: 5px;
+        margin: 5px;
+    }    
+
+    /* Home grid */
+    .home-grid{
+        grid-template-rows: repeat(3, [row] 33%);
+    }
+
+    .aboutme-box p{
+        width: 85%;
+    }
+
+    .experience-box{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        margin-bottom: 30px;
+    }
+
+    .picture-box{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        margin-left: 5px;
+    }
+}
+
+/* Adjusting font size for mobile */
+@media only screen and (max-width: 450px) {
+    .aboutme-box p, .home-grid ul li{
+        width: 100%;  
+        font-size: 80%;
+    }
+}

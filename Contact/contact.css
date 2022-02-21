@@ -1,0 +1,11 @@
+#ContactInfoTable{
+    border-spacing: 12px;
+}
+
+#ContactInfoTable a{
+    opacity: 0.5;
+}
+
+#ContactInfoTable a:hover{
+    opacity: 1;
+}

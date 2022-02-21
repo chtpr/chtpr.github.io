@@ -2,61 +2,75 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ChrisLee</title>
-  <link rel="stylesheet" href="navbar_style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-
-<style>
-
-  </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/08bafb053b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="wholepage">
     <div class="navbar">
-        <h2 class="myname"><a href="#">Christopher Lee</a></h2>
-        <h2 class="initials"><a href="#">CL</a></h2>
-        <div>
+        <h2 class="logo"><a href="index.html">Christopher Lee</a></h2>
+        <div class="menu-options">
             <ul>
-            
-                <li id="active"><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Interests</a></li>
-                <li><a href="#">Contact</a></li>
+                <li id="active"><a href="index.html">Home</a></li>
+                <li><a href="Projects/index.html">Projects</a></li>
+                <li><a href="Interests/index.html">Interests</a></li>
+                <li><a href="Contact/index.html">Contact</a></li>
             </ul>
-        </div>
-        
+        </div> 
     </div>   
-    <!-- <img src="home.JPG" alt="Home"> -->
-    <div class="home">
-        
-        <h2>About me</h2>
-        <p class="aboutme">
-            I'm Chris, a 27 year-old student from Seattle.
-        </p>
-    </div>
-</div>
-    <!-- <div class="navbar">
-        <div class="myname"><a href="/home">Christopher Lee</a></div>
-        <div>
-            <ul>
-            
-                <li id="active"><a href="/home">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/interests">Interests</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
+    <div class="home-grid">
+        <div class="aboutme-box">
+            <h2>About Me</h2>
+            <p>
+                I'm Chris, a 27 year-old student from Seattle. I graduated from 
+                Andrews University with a biology degree, originally 
+                intending to pursue a career in pharmacy. However, after 
+                discovering my affinity for coding while taking Stanford 
+                University’s Code in Place course, I decided to switch career 
+                paths and pursue computer science, leading me to the MSCS 
+                ALIGN program at Northeastern University.  During my time here 
+                so far, I have become most familiar with Java and Python, with 
+                some exposure to MySQL as well.  Currently, I am aiming to 
+                learn HTML/CSS, JavaScript, and React while also strengthening 
+                my foundation in algorithms and data structures.
+            </p>
         </div>
-        
-    </div>  -->
+        <div class="picture-box">
+            <img id="profilepic" src="Home-Images/profilepic.jpg" alt="Profile">
+        </div>
+        <div class="experience-box">
+        <h2>Education/Experience</h2>
+        <ul>
+            <li>
+                <h3>Northeastern University</h3>
+                <div>Master of Science in CS ALIGN</div>
+                <div>2020 - Present</div>
+            </li>
+            <li>
+                <h3>Nike</h3>
+                <div>Sales Associate</div>
+                <div>2019 - 2020</div>
+            </li>
+            <li>
+                <h3>Rite Aid</h3>
+                <div>Pharmacy Technician</div>
+                <div>2018</div>
+            </li>
+            <li>
+                <h3>Andrews University</h3>
+                <div>Bachelor of Science in Biology</div>
+                <div>2013-2017</div>
+            </li>
+        </ul>
+        </div>
+    </div>
 </body>
 
 </html>
-
